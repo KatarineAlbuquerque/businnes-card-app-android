@@ -13,14 +13,14 @@
 
 ### II. Layout do Projeto
 
-<table width="600">
+<table>
     <tr>
-        <td><img src="./images/img1.png" alt="Tela Inicial" width="100%" /></td>
-        <td><img src="./images/img2.png" alt="Tela de Cadastro" width="100%" /></td>
+        <td width="200"><img src="./images/img1.png" alt="Tela Inicial" width="100%" /></td>
+        <td width="200"><img src="./images/img2.png" alt="Tela de Cadastro" width="100%" /></td>
     </tr>
-    <tr width="100%">
-        <td><img src="./images/img3.png" alt="Lista de Cards" width="100%" /></td>
-        <td><img src="./images/img4.png" alt="Compartilhar" width="100%" /></td>
+    <tr>
+        <td width="200"><img src="./images/img3.png" alt="Lista de Cards" width="100%" /></td>
+        <td width="200"><img src="./images/img4.png" alt="Compartilhar" width="100%" /></td>
     </tr>
 </table>
 
