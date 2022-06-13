@@ -13,7 +13,7 @@
 
 ### II. Layout do Projeto
 
-<table width="50%">
+<table width="600">
     <tr>
         <td><img src="./images/img1.png" alt="Tela Inicial" width="100%" /></td>
         <td><img src="./images/img2.png" alt="Tela de Cadastro" width="100%" /></td>
