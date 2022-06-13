@@ -1,0 +1,29 @@
+<resources>
+    <!--App Name-->
+    <string name="app_name">Business Card</string>
+    <!--Inputs Form-->
+    <string name="id">id</string>
+    <string name="company">Company</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <!--Content Description-->
+    <string name="cd_share_image">Share Image</string>
+    <string name="cd_logo_image">Logo Image</string>
+    <string name="cd_close">Close Image</string>
+    <string name="cd_delete">Delete Image</string>
+    <string name="cd_add_card_business">Add Card</string>
+    <!--Buttons-->
+    <string name="button_add">Add</string>
+    <string name="button_delete">Remove</string>
+    <!--No Cards-->
+    <string name="no_cards">No Cards!</string>
+    <!--Save Success-->
+    <string name="success">Saved successfully!</string>
+    <!--Save Error-->
+    <string name="error">Error Occurred! Try again.</string>
+    <!--Remove Success-->
+    <string name="remove_success">Successfully removed!</string>
+    <!--Remove Error-->
+    <string name="errorRemove">Error removing!</string>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <!--Layout Padding and Margin-->
+    <dimen name="layout_5dp">5dp</dimen>
+    <dimen name="layout_8dp">8dp</dimen>
+    <dimen name="layout_16dp">16dp</dimen>
+    <dimen name="layout_24dp">24dp</dimen>
+    <dimen name="layout_64dp">64dp</dimen>
+    <!--Padding-->
+    <dimen name="padding_button_12dp">12dp</dimen>
+    <!--Size-->
+    <dimen name="size_title_card_item">18sp</dimen>
+    <dimen name="size_title_app">30sp</dimen>
+    <dimen name="size_text_card">18sp</dimen>
+    <dimen name="size_text_form">20sp</dimen>
+    <!--Layout Size-->
+    <dimen name="image_logo_layout">40dp</dimen>
+    <dimen name="image_icon_layout">25dp</dimen>
+
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/layout_16dp"
+        android:layout_marginBottom="@dimen/layout_16dp"
+        android:backgroundTint="@color/primary_500"
+        android:contentDescription="@string/cd_add_card_business"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_add_plus"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_16dp"
+        android:layout_marginTop="@dimen/layout_16dp"
+        android:layout_marginEnd="@dimen/layout_16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="@dimen/image_logo_layout"
+            android:layout_height="@dimen/image_logo_layout"
+            android:contentDescription="@string/cd_logo_image"
+            app:srcCompat="@drawable/ic_green"
+            tools:ignore="ImageContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/primary_500"
+            android:textSize="@dimen/size_title_app"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/layout_16dp"
+        android:background="@color/secondary_200"
+        android:paddingStart="@dimen/layout_16dp"
+        android:paddingEnd="@dimen/layout_16dp"
+        android:paddingBottom="@dimen/layout_64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_cards"
+        tools:itemCount="4"
+        tools:listitem="@layout/card_item" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/no_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_16dp"
+        android:layout_marginTop="@dimen/layout_16dp"
+        android:layout_marginEnd="@dimen/layout_16dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/primary_700"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:text="@string/no_cards" />
+
+</androidx.constraintlayout.widget.ConstraintLayout >
