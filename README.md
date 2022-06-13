@@ -15,12 +15,12 @@
 
 <table>
     <tr>
-        <td width="250"><img src="./images/img1.png" alt="Tela Inicial" width="100%" /></td>
-        <td width="250"><img src="./images/img2.png" alt="Tela de Cadastro" width="100%" /></td>
+        <td width="320"><img src="./images/img1.png" alt="Tela Inicial" width="100%" /></td>
+        <td width="320"><img src="./images/img2.png" alt="Tela de Cadastro" width="100%" /></td>
     </tr>
     <tr>
-        <td width="250"><img src="./images/img3.png" alt="Lista de Cards" width="100%" /></td>
-        <td width="250"><img src="./images/img4.png" alt="Compartilhar" width="100%" /></td>
+        <td width="320"><img src="./images/img3.png" alt="Lista de Cards" width="100%" /></td>
+        <td width="320"><img src="./images/img4.png" alt="Compartilhar" width="100%" /></td>
     </tr>
 </table>
 
