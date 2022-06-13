@@ -42,7 +42,7 @@ class AddCardActivity : AppCompatActivity() {
             Toast.makeText(this, getString(R.string.error), Toast.LENGTH_LONG).show()
         }
     }
-
+    // Test Inputs is Empty
     private fun inputChecked(company: String, name: String, email: String, phone: String): Boolean {
         return !(TextUtils.isEmpty(company) && (TextUtils.isEmpty(name) && (TextUtils.isEmpty(email) && (TextUtils.isEmpty(phone)))))
     }

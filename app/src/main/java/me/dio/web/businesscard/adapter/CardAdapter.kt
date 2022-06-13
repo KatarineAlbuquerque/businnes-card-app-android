@@ -36,13 +36,14 @@ class CardAdapter(private var cards: List<Card>, private var context: Context) :
         holder.binding.emailItem.text = positionCard.email.toString()
         holder.binding.phoneItem.text = positionCard.phone.toString()
 
+        // Delete Item Id
         holder.binding.imageDelete.setOnClickListener{
             var id = holder.binding.idItem.text.toString()
             cardViewModel.removeCard(id)
             Toast.makeText(context, context.getString(R.string.remove_success), Toast.LENGTH_LONG).show()
             removeItem(positionCard)
         }
-
+        // Share Data
         holder.binding.imageShare.setOnClickListener{
             var intent = Intent()
             intent.setAction(Intent.ACTION_SEND)
@@ -51,7 +52,7 @@ class CardAdapter(private var cards: List<Card>, private var context: Context) :
             context.startActivity(intent)
         }
     }
-
+    // Remove Item List
     fun removeItem(cardPosition: Card) {
         notifyItemRemoved(cardPosition.id)
         notifyDataSetChanged()
