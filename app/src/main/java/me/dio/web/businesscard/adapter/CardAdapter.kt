@@ -6,6 +6,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import me.dio.web.businesscard.R
 import me.dio.web.businesscard.data.repository.CardRepository
@@ -15,12 +16,8 @@ import me.dio.web.businesscard.model.Card
 
 class CardAdapter(private var cards: List<Card>, private var context: Context) : RecyclerView.Adapter<CardAdapter.ViewHolder>() {
 
-    var cardViewModel: CardViewModel
+    var cardViewModel: CardViewModel = CardViewModel(Application())
     lateinit var cardRepository: CardRepository
-
-    init {
-        cardViewModel = CardViewModel(Application())
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         var binding = CardItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
