@@ -1,6 +1,5 @@
-package me.dio.web.businesscard.adapter
+package me.dio.web.businesscard.views
 
-import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -15,8 +14,8 @@ import me.dio.web.businesscard.model.Card
 
 class CardAdapter(private var cards: List<Card>, private var context: Context) : RecyclerView.Adapter<CardAdapter.ViewHolder>() {
 
-    var cardViewModel: CardViewModel = CardViewModel(Application())
-    lateinit var cardRepository: CardRepository
+    private lateinit var cardViewModel:CardViewModel
+    private lateinit var cardRepository: CardRepository
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         var binding = CardItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)

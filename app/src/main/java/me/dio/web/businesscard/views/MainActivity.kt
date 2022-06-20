@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import me.dio.web.businesscard.R
-import me.dio.web.businesscard.adapter.CardAdapter
 import me.dio.web.businesscard.data.viewmodel.CardViewModel
 import me.dio.web.businesscard.databinding.ActivityMainBinding
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var cardAdapter: CardAdapter
 
-    lateinit var cardViewModel: CardViewModel
+    private lateinit var cardViewModel:CardViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

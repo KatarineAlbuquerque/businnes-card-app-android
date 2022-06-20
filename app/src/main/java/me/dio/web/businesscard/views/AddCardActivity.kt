@@ -1,10 +1,10 @@
 package me.dio.web.businesscard.views
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import me.dio.web.businesscard.R
 import me.dio.web.businesscard.data.viewmodel.CardViewModel
